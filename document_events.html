@@ -1,0 +1,27 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        Username   <input type="text" id="username"><br><br>
+        Password   <input type="password" name="password"><br><br>
+        <button type="submit">Submit</button>
+        <h1>This is HTML</h1>
+        <h1>This is second heading</h1>
+        
+        <script>
+            var username = document.getElementById("username");
+            var passwords = document.getElementsByName("password");
+            var h1 = document.getElementsByTagName("h1");
+            var h1s = h1[0];
+            var h2s = h1[1];
+            
+            console.log(h1);
+            username.placeholder = "username";
+            console.log(passwords);
+            passwords[0].value = "saik";
+            h1s.style.color = "red";
+            h2s.style.color = "blue";
+        </script>
+    </body>
+</html>

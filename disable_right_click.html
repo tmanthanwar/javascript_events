@@ -1,0 +1,21 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <img onmouseover="zoomIn()" onmouseout="zoomOut()" id="zoom_img" src="./Images/dutch flower.jpg" height="150"; width="120">
+    
+
+    <script>
+        var img = document.getElementById("zoom_img");
+        function zoomIn(){
+            img.style.width = "150";
+            img.style.height = "170";
+        }
+        function zoomOut(){
+            img.style.width = "120";
+            img.style.height = "150";
+        }
+    </script>
+    </body>
+</html>

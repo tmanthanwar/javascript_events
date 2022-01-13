@@ -1,0 +1,21 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input type="text" onpaste = "return paste()" oncopy = "return copy()"><span id="msg"></span>
+
+        <script>
+            
+            function paste(){
+                document.getElementById("msg").innerHTML = "You cannot paste.";
+                return false;    
+            }
+
+            function copy(){
+                document.getElementById("msg").innerHTML = "You cannot copy.";
+                return false;
+            }
+        </script>
+    </body>
+</html>

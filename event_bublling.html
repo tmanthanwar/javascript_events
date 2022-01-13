@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <style>
+    body *{
+      margin: 10px;
+      border: 2px solid black;   
+    }
+    </style>
+  </head>
+  <body>4
+    <form id="form">Form
+      <div id="div">Div
+        <p id="p">P</p>
+      </div>
+    </form>
+    <script>
+      var form = document.getElementById("form");
+      var div = document.getElementById("div");
+      var p = document.getElementById("p");
+
+      form.onclick = function(){
+        alert("form clicked");
+      }
+      div.onclick = function(){
+        alert("div clicked");
+        event.stopPropagation();
+      }
+      p.onclick = function(){
+        alert("p clicked");
+        event.stopPropagation();
+      }
+    </script>
+  </body>
+</html>

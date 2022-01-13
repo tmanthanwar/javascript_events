@@ -1,0 +1,31 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <!-- onclick Event attribute -->
+        <h2 id="heading" style="color: darkblue;">This is HTML .</h2>
+        
+        <button onclick="colorChange()">Click Here</button>
+
+        <p onclick="paraChange()" id="para">This sentance will change after clicking on it.</p>
+    
+        <script>
+
+            function colorChange(){
+                if (document.getElementById("heading").style.color == "darkblue"){
+                    document.getElementById("heading").style.color = "red";
+                }
+                else{
+                    document.getElementById("heading").style.color = "darkblue";
+                }
+            }
+
+            function paraChange(){
+                document.getElementById("para").innerHTML= "Now its changed."
+            }
+
+        </script>
+    </body>
+
+</html>

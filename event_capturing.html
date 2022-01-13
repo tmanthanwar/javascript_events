@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <style>
+            body * {
+                margin: 10px;
+                border: 2px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <form id="form">Form
+            <div id="div">Div
+                <p id="p">P</p>
+            </div>
+        </form>
+        <script>
+            var form = document.getElementById("form");
+            var div = document.getElementById("div");
+            var p = document.getElementById("p")
+            var formHandler = function(){
+                alert("form clicked");
+            }
+            var divHandler = function(){
+                alert("div clicked");
+            }
+            var pHandler = function(){
+                alert("p clicked");
+            }
+            var p2Handler = function(){
+                alert("p2 clicked");
+            }
+
+            form.addEventListener('click',formHandler);
+            div.addEventListener('click',divHandler);
+            p.addEventListener('click',pHandler);
+            p.addEventListener('click',p2Handler);
+        </script>
+    </body>
+</html>
